@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <h3>Testing123</h3>
+        <h3>Footer</h3>
     </footer>
 </template>
 
@@ -11,5 +11,7 @@
 </script>
 
 <style scoped>
-
+footer{
+    background-color: rgb(184, 240, 240);
+}
 </style>
