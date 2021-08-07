@@ -1,16 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-  </div>
+<div>
+  <FirstHeader></FirstHeader>
+  <FirstBody></FirstBody>
+  <FirstFooter></FirstFooter>
+</div>
 </template>
 
 <script>
+import FirstHeader from './components/FirstHeader.vue'
+import FirstBody from './components/FirstBody.vue'
+import FirstFooter from './components/FirstFooter.vue'
 
 
 export default {
   name: 'App',
   components: {
-
+    FirstHeader,
+    FirstBody,
+    FirstFooter
   }
 }
 </script>
