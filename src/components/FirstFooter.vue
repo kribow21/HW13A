@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <h3>Footer</h3>
+        <p>&copy;2021 Ocenia</p>
     </footer>
 </template>
 
@@ -13,5 +13,8 @@
 <style scoped>
 footer{
     background-color: rgb(184, 240, 240);
+}
+p{
+    font-family: 'Raleway', sans-serif;
 }
 </style>
