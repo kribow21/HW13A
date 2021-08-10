@@ -39,6 +39,9 @@ button{
     background-color: mintcream;
     border-radius: 6px;
     padding: 5px;
+    color: rgb(161, 111, 46);
+    border-color: rgb(161, 111, 46);
+
 }
 button:hover{
     background-color: rgb(214, 250, 232);

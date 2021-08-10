@@ -1,7 +1,7 @@
 <template>
     <body>
     <FirstHeader></FirstHeader>
-        <h1 id="header"> How the beach benefits your brain according to science</h1>
+        <h1>How the beach benefits your brain according to science</h1>
         <section>
             <img src="https://images.pexels.com/photos/2425664/pexels-photo-2425664.jpeg" alt="">
             <img src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg" alt="">
@@ -33,6 +33,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Raleway&display=swap" rel="stylesheet">
+    <TestComp></TestComp>
     <FirstFooter></FirstFooter>
 
     </body>
@@ -41,12 +42,14 @@
 <script>
 import FirstHeader from './FirstHeader.vue'
 import FirstFooter from './FirstFooter.vue'
+import TestComp from './TestComp.vue'
 
     export default {
         name : "FirstBody",
         components : {
             FirstHeader,
-            FirstFooter
+            FirstFooter,
+            TestComp
         }
     }
 </script>
@@ -76,10 +79,10 @@ article{
     margin: 5% 10%;
 }
 h1{
-    margin-left: 10%;
+    margin-left: 15%;
     font-size: 3rem;
     font-family: 'Handlee', cursive;
-    padding-top: 5%;
+    padding: 3%;
     color: rgb(60, 84, 219);
 }
 h3{

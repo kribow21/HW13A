@@ -17,5 +17,6 @@ footer{
 p{
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    color: rgb(161, 111, 46);
 }
 </style>
