@@ -12,9 +12,10 @@
 
 <style scoped>
 footer{
-    background-color: rgb(184, 240, 240);
+    height: 80px;
 }
 p{
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 </style>

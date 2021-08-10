@@ -1,6 +1,12 @@
 <template>
     <body>
-        <h1>How the beach benefits your brain according to science</h1>
+    <FirstHeader></FirstHeader>
+        <h1 id="header"> How the beach benefits your brain according to science</h1>
+        <section>
+            <img src="https://images.pexels.com/photos/2425664/pexels-photo-2425664.jpeg" alt="">
+            <img src="https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg" alt="">
+            <img src="https://images.pexels.com/photos/2645245/pexels-photo-2645245.jpeg" alt="">
+        </section>
         <article>
             <div>
                 <h3>Remove the blues</h3>
@@ -27,19 +33,46 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Raleway&display=swap" rel="stylesheet">
+    <FirstFooter></FirstFooter>
+
     </body>
 </template>
 
 <script>
+import FirstHeader from './FirstHeader.vue'
+import FirstFooter from './FirstFooter.vue'
+
     export default {
-        name : "FirstBody"
+        name : "FirstBody",
+        components : {
+            FirstHeader,
+            FirstFooter
+        }
     }
 </script>
 
 <style scoped>
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 80% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(-40deg, #52cfee, #d1fcff, #a6ffff, #6ac9f5);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+}
 article{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     margin: 5% 10%;
 }
 h1{
@@ -47,14 +80,30 @@ h1{
     font-size: 3rem;
     font-family: 'Handlee', cursive;
     padding-top: 5%;
+    color: rgb(60, 84, 219);
 }
 h3{
     font-family: 'Handlee', cursive;
+    font-size: 2rem;
+    color: rgb(207, 162, 103);
+
+
 }
 p{
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
-}
+    font-size: 1.2rem;
+    color: rgb(161, 111, 46);
+    padding-bottom: 4%;
 
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 4%;
+}
+img{
+    width: 400px;
+}
 
 </style>

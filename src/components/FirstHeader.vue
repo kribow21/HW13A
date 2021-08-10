@@ -4,13 +4,13 @@
     <a href="#">Home</a>
     <a href="#">Gallary</a>
     <a href="#">About Us</a>
-    <button>Click for Article</button>
+    <a href="https://www.inc.com/anne-gherini/how-beach-benefits-your-brain-according-to-science.html" target="_blank"><button>Click to see Article</button></a>
     </header>
 </template>
 
 <script>
     export default {
-        name : "FirstHeader"
+        name : "FirstHeader",
     }
 </script>
 
@@ -21,7 +21,6 @@ img{
 header{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr ;
-    background-color: rgb(184, 240, 240);
     align-items: center;
 }
 a{
@@ -29,10 +28,19 @@ a{
     font-size: 1.2rem;
     font-family: 'Handlee', cursive;
 }
+a:hover{
+    color: rgb(128, 168, 226);
+    transition: all 0.3s ease 0s;
+}
 button{
     width: 60%;
     font-size: 1rem;
     font-family: 'Handlee', cursive;
-
+    background-color: mintcream;
+    border-radius: 6px;
+    padding: 5px;
+}
+button:hover{
+    background-color: rgb(214, 250, 232);
 }
 </style>
